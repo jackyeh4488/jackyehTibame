@@ -1,0 +1,162 @@
+@import url(../css/reset.css);
+
+@import url(../css/header-footer.css);
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* --------------banner----------------- */
+
+.banner{
+    margin-top: 75px;
+    margin-bottom: 80px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+/* h1放在這 */
+
+.title{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.title h1{
+    text-align: center;
+    font-size: 36px;
+    position: relative;
+    color: #E96B92;
+}
+
+.title h1::before,.title h1::after{
+    content: "";
+    position: absolute;
+    background: #E96B92;
+    width: 240px;
+    height: 1px;
+}
+
+.title h1::before{
+    top: 20px;
+    left: 260px;
+}
+
+.title h1::after{
+    top: 20px;
+    right: 260px;
+}
+
+/* ---------nav------------ */
+nav{
+    /* margin: 0 auto; */
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    background: #F4A7B9;
+    width: 1000px;
+    border-radius: 40px;
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+    line-height: 80px;
+    text-align: center;
+    font-size: 20px;
+    width: 250px;
+    letter-spacing: 2px;
+    color: #fff;
+    background: #F4A7B9;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+nav a:hover{
+    background: #E96B92;
+    /* border-radius: 40px; */
+}
+
+nav a:active{
+    background: #E96B92;
+}
+
+
+/* --------------products------------------ */
+
+.product{
+    width: 1200px;
+    margin: 0 auto;
+    /* background: #e7eeea;     */
+}
+
+.product ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product li{
+    /* outline: 1px solid rgb(171, 22, 22); */
+    text-align: center;
+    margin-right: 49px;
+    margin-left: 49px;
+    margin-bottom: 60px;
+    width: 300px;
+}
+
+.product img{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    /* box-shadow: 4px 4px 4px 0 #ccc; */
+}
+
+.product-link{
+    text-decoration: none;
+    color: #000;
+}
+
+.product h2{
+    font-size: 16px;
+    /* line-height: 2; */
+    letter-spacing: 1.8px;
+    margin-bottom: 43px;
+}
+
+.product p{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.seemore{
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    line-height: 60px;
+    height: 60px;
+    text-decoration: none;
+    background: #E96B92;
+    color: #fff;
+    border-radius: 40px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    box-shadow: 4px 4px 7px 0 #ccc;
+    transition: .3s;
+}
+
+.seemore:hover{
+    background: #000;
+    color: #E96B92;
+    font-size: 20px;
+    width: 250px;
+}
+

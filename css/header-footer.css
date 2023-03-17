@@ -1,0 +1,129 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background: #E96B92;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    /* margin-bottom: 20px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+header ul{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    width: 200px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+header li{
+    width: 100px;
+}
+
+header i{
+    padding-right: 10px;
+}
+
+header li a{
+    color:#fff;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    /* border: 1px solid blue; */
+    transition: .3s;
+}
+
+header a:hover{
+    color: black;
+}
+
+/* ---------------------------footer------------------------------ */
+footer{
+    width: 100%;
+    background: #E96B92;
+    margin-top: 120px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 2px;
+}
+
+footer .info{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    width: 1006px;
+    /* border:  1px solid black; */
+    margin-bottom: 20px;
+}
+
+.info a:visited{
+    color: #fff;
+}
+
+.footer-nav a{
+    color: #fff;
+    display: block;
+    width: 150px;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 2.4;
+    transition: 0.4s;
+    border-bottom: 1px solid #E96B92;
+}
+
+.footer-nav a:hover{
+    color: #000;
+    border-bottom: 1px solid #000;
+    /* margin-bottom: 5px; */
+}
+
+.footer-contact{    
+    font-size: 13px;
+    line-height: 2.4;
+}
+
+.footer-contact h3{
+    font-size: 16px;
+}
+
+/* ------------------------- 社群媒體 ---------------------------- */
+.social-media{
+    /* border:  1px solid teal; */
+    font-size: 25px;
+}
+
+.social-media a{
+    margin-right: 20px;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.social-media a:hover{
+    color: #000;
+}
+
+.copyright p{
+    color: #fff;
+    font-size: 13px;
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.copyright p:hover{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+}

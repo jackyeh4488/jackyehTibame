@@ -1,0 +1,259 @@
+@import url(../css/reset.css);
+
+@import url(../css/header-footer.css);
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* wrapper */
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 180px;
+    /* outline: 5px solid green; */
+}
+
+.wrapper>h2{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 100px;
+    position: relative;
+    color: #E96B92;
+}
+
+.wrapper>h2::before{
+    content:"";
+    position: absolute;
+    top: 61%;
+    left: 22%;
+    background: #E96B92;
+    width: 240px;
+    height: 1px;
+}
+
+.wrapper>h2::after{
+    content: "";
+    position: absolute;
+    top: 61%;
+    right: 22%;
+    background: #E96B92;
+    width: 240px;
+    height: 1px;
+}
+
+/* main */
+
+.main{
+    width: 1120px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #666666;
+    margin-bottom: 100px;
+}
+/* 照片在這 */
+.pic{
+    width: 560px;
+    /* outline: 1px solid red; */
+    /* margin-right: 0px; */
+}
+
+.big{
+    width: 560px;
+}
+
+.big img{
+    width: 100%;
+}
+
+/* content */
+
+.content{
+    /* outline: 1px solid royalblue; */
+    width: 560px;
+    padding: 40px 40px 40px 40px;
+    box-sizing: border-box;
+}
+
+.content h1{
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.content h2{
+    width: 480px;
+    font-size: 26px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    /* font-weight: bold; */
+}
+
+.content p{
+    width: 458px;
+    margin-bottom: 30px;
+    line-height: 2.4;
+    letter-spacing: 3px;
+}
+
+select{
+    color: #333;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    /* border: none; */
+}
+/* a連結 */
+.shop{
+    text-decoration: none;
+    width: 508px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: block;
+    background: #F4A7B9;
+    color: #fff;
+    box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.shop:hover{
+    background: #000;
+    color: #E96B92;
+}
+
+.keep{
+    text-decoration: none;
+    width: 508px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: block;
+    background: #fff;
+    color: #666666;
+    box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    border: 1px solid #ccc;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.keep:hover{
+    background: #000;
+    color: #E96B92;
+}
+
+.shop i{
+    margin-right: 10px;
+}
+
+.keep i{
+    margin-right: 10px;
+}
+
+/* 下面資訊的地方 */
+
+/* 上面兩格 */
+section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+
+
+.product-info{
+    width: 580px;
+    box-sizing: border-box;
+    background: #F4A7B9;
+    padding: 30px;
+    border-radius: 20px;
+    color: #333;
+    line-height: 2.2;
+    position: relative;
+}
+
+.product-info h2{
+    position: absolute;
+    top: -70px;
+    left: 30px;
+    font-size: 20px;
+}
+
+.pay{
+    width: 580px;
+    box-sizing: border-box;
+    background: #F4A7B9;
+    padding: 40px;
+    border-radius: 20px;
+    color: #333;
+    line-height: 2.8;
+    position: relative;
+}
+
+.pay h2{
+    position: absolute;
+    top: -70px;
+    left: 20px;
+    font-size: 20px;
+}
+
+/* 下面一格 */
+
+article{
+    width: 1200px;
+    background: #F4A7B9;
+    padding: 30px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+article h2{
+    font-size: 20px;
+    position: absolute;
+    top: -50px;
+    left: 30px;
+}
+
+.mustknow{
+    /* background: #c8c3c3; */
+    
+}
+.mustknow p{
+    font-size: 18px;
+    color: #333;
+    width: 690px;
+    margin: 0 auto;
+    line-height: 3;
+    letter-spacing: 1.2px;
+}
+
+/* 類似商品 */
+
+.similar-product{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.similar-product h2{
+    position: absolute;
+    top: -40px;
+    left: 30px;
+    font-size: 20px;
+}
+
+.similar-product img{
+    display: block;
+}
