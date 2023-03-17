@@ -1,6 +1,7 @@
-@import url(../css/reset.css);
+/* product */
+@import url(reset.css);
 
-@import url(../css/header-footer.css);
+@import url(header-footer.css);
 
 body{
     font-family: 'Noto Sans TC', sans-serif;
