@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>*:･ﾟ✧ clayofstories ✧･ﾟ: *</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <script src="https://kit.fontawesome.com/56b7867370.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet"> <!-- 字形 -->
+    <link rel="stylesheet" href="css/style.css"> <!-- 我的css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/> <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- Aos -->
 </head>
 <body>
 <!------------------- header （不包在裡面）------------------->
     <header>
         <ul class="menu">
-            <li><a href="#"><i class="fa-solid fa-bars"></i>目錄</a></li>
+            <li>
+                <a href="#"><i class="fa-solid fa-bars"></i>目錄</a>
+                <ol>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="#">How to buy</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ol>
+            </li>
             <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>搜尋</a></li>                
         </ul>
         <a href="index.html"><img src="img/clayofstories logo.png" alt=""></a>
@@ -30,13 +39,29 @@
 
 <!------------------- 輪播 ------------------->
         <div class="banner">
-            <img src="img/clay1.png" alt="">
+<!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/clay1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/clay1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/clay1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/clay1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/clay1.png" alt=""></div>              
+                </div>
+                <div class="swiper-button-next" style="color: #fff;"></div>
+                <div class="swiper-button-prev" style="color: #fff;"></div>
+            </div>
         </div>   
 
 <!------------- clayofstories 長條 ----------------->
 
         <div class="logo-banner">
-            <img src="img/cla.png" alt="">
+            <img class="clay-banner" src="img/cla.png" alt="">
+            <img class="clay-banner" src="img/cla.png" alt="">
+            <img class="clay-banner" src="img/cla.png" alt="">
+            <img class="clay-banner" src="img/cla.png" alt="">
+            <img class="clay-banner" src="img/cla.png" alt="">
+            <img class="clay-banner" src="img/cla.png" alt="">
         </div>
 
 
@@ -44,7 +69,7 @@
 <!------------------- products -------------------->
         <div class="products">
             <ul>
-                <li><a href="#"><img src="img/Group 65.png" alt=""><p>plates</p></a></li>
+                <li><a href="product.html"><img src="img/Group 65.png" alt=""><p>plates</p></a></li>
                 <li><a href="#"><img src="img/Group 66.png" alt=""><p>mirror</p></a></li>
                 <li><a href="#"><img src="img/Group 68.png" alt=""><p>rings</p></a></li>
                 <li><a href="#"><img src="img/Group 69.png" alt=""><p>others</p></a></li>
@@ -84,13 +109,16 @@
 
 <!-------------------- join us --------------------->
 
-        <div class="join-us">
+        <div class="join-us" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
             <img src="img/clayheartlogo.png" alt="" >
             <div class="join-us-box">
                 <h2>Join our newsletter</h2>
                 <p>Join  our  newsletter  and  stay  up-to-date  with  the  latest  news,  events,  and  exclusive  offers.  Don't  miss  out  on  any  important  updates,  subscribe  now!</p>
-                <input class="input-text" type="text" placeholder="Enter your Email">
-                <input class="input-button" type="button" value="Subscribe">
+                <div class="join-us-text">
+                    <input class="input-text" type="text" placeholder="Enter your Email">
+                    <input class="input-button" type="button" value="Subscribe">
+                </div>
             </div>
         </div>
     </div>
@@ -120,5 +148,24 @@
         </div>
     </footer>
     
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
+
 </body>
 </html>

@@ -24,7 +24,11 @@ body{
 .wrapper{
     width: 1200px;
     margin: 0 auto;
-    outline: 2px solid #445644;
+    /* outline: 2px solid #445644; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .title{
@@ -36,6 +40,7 @@ body{
     color: #E96B92;
     text-align: center;
     position: relative;
+    margin-bottom: 100px;
 }
 
 .title h1::before, .title h1::after{
@@ -54,4 +59,39 @@ body{
 .title h1::after{
     top: 20px;
     right: 260px;
+}
+
+/* 內容在這 */
+
+.box{
+    background: #F4A7B9;
+    width: 1200px;
+    padding: 40px 0;
+    margin-bottom: 60px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stone{
+    flex-direction: row-reverse;
+    background: #E96B92;
+    color: #fff;
+}
+
+.pic{
+    width: 500px;
+    border-radius: 50%;
+}
+
+.pic img{
+    width: 100%;
+}
+
+.content p{
+    width: 400px;
+    font-size: 17px;
+    line-height: 3.5;
+    letter-spacing: 2px;
 }

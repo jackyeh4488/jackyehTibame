@@ -23,7 +23,50 @@ header ul{
 
 header li{
     width: 100px;
+    /* 這邊等等可能會出錯 */
 }
+
+.menu>li{
+    position: relative;
+    transition: 1s;
+}
+
+.menu li:hover ol{
+    display: block;
+}
+
+/* 子選單 */
+
+ol{
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: -61px;
+    /* width: 300px; */
+    /* height: 800px; */
+    background: #F4A7B9;
+}
+
+ol>li{
+    text-align: center;
+    width: 300px;
+    border-bottom: #F4A7B9;
+}
+
+ol>li>a{
+    border-bottom: 1px solid #F4A7B9;
+    transition: .3s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* background: #000; */
+}
+
+ol>li>a:hover{
+    border-bottom: 1px solid #ccc;
+}
+
+
+/*  */
 
 header i{
     padding-right: 10px;

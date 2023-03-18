@@ -9,13 +9,23 @@
     <script src="https://kit.fontawesome.com/56b7867370.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="css/aboutus.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     
     <!------------------------- header （不包在裡面）------------------------->
     <header>
         <ul class="menu">
-            <li><a href="#"><i class="fa-solid fa-bars"></i>目錄</a></li>
+            <li>
+                <a href="#"><i class="fa-solid fa-bars"></i>目錄</a>
+                <ol>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="#">How to buy</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ol>
+            </li>
             <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>搜尋</a></li>                
         </ul>
         <a href="index.html"><img src="img/clayofstories logo.png" alt=""></a>
@@ -28,13 +38,42 @@
     <!-- banner -->
 
     <div class="banner">
-        <img src="../img/Mask group.png" alt="">
+        <img src="img/Group 25.png" alt="">
     </div>
 
     <!-- wrapper -->
     <div class="wrapper">
         <div class="title">
             <h1>About Us</h1>
+        </div>
+
+        
+        <div class="brand box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="pic">
+                <img src="img/Mask group.png" alt="">
+            </div>
+            <div class="content">
+                <p>We make cute stuffs with natural stone clay, including jewelry trays, rings, earrings, mirrors, picture holders,photo frames, and anything you could think of!</p>
+            </div>
+        </div>
+     
+
+        <div class="stone box" data-aos="zoom-in-left">
+            <div class="pic">
+                <img src="img/Mask group (1).png" alt="">
+            </div>
+            <div class="content">
+                <p>We make cute stuffs with natural stone clay, including jewelry trays, rings, earrings, mirrors, picture holders,photo frames, and anything you could think of!</p>
+            </div>
+        </div>
+
+        <div class="market box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="pic">
+                <img src="img/Mask group (2).png" alt="">
+            </div>
+            <div class="content">
+                <p>We make cute stuffs with natural stone clay, including jewelry trays, rings, earrings, mirrors, picture holders,photo frames, and anything you could think of!</p>
+            </div>
         </div>
     </div>
 
@@ -62,5 +101,12 @@
             <p>Copyright © clayofstories 2023 All Rights Reserved</p>
         </div>
     </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
 </body>
 </html>
