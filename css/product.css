@@ -161,3 +161,27 @@ nav a:active{
     width: 250px;
 }
 
+/* 測試 */
+
+.tag{
+    width: 300px;
+    height: 300px;
+    display: block;
+}
+
+.pics{
+    position: relative;
+}
+
+.pics img{
+    position: absolute;
+    display: block;
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity.3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+
+.pics img:last-child:hover{
+    /* 滑入時第一張透明度設0 */
+     opacity:0;}
