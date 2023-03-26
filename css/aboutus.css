@@ -40,7 +40,7 @@ body{
     color: #E96B92;
     text-align: center;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 130px;
 }
 
 .title h1::before, .title h1::after{
@@ -81,7 +81,7 @@ body{
 }
 
 .pic{
-    width: 500px;
+    width: 400px;
     border-radius: 50%;
 }
 
@@ -92,6 +92,14 @@ body{
 .content p{
     width: 400px;
     font-size: 17px;
-    line-height: 3.5;
+    line-height: 3;
     letter-spacing: 2px;
+}
+
+.test1{
+    color: #00346b;
+}
+
+.test2{
+    color: #00143e;
 }

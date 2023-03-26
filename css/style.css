@@ -56,7 +56,7 @@ body{
     
 }
 
-.clay-banner{
+.logo-banner img{
     width: 100%;
     display: block;
     animation: claybanner 30s linear infinite;
@@ -85,16 +85,15 @@ body{
     width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .products li{
     /* border: 1px solid yellowgreen; */
-    flex-grow: 1;
 }
 
 .products a{
-    color: #000;
+    color: #00346b;
     display: block;
     text-decoration: none;
     text-align: center;
@@ -108,11 +107,11 @@ body{
 
 /* --------------------- 大圖 ----------------------- */
 
-.wrapper>img{
+/* .wrapper>img{
     display: block;
     margin: 0 auto;
     margin-bottom: 50px;
-}
+} */
 
 
 /* ---------------------- 聯名section------------------------ */
@@ -142,12 +141,13 @@ section img{
 }
 
 section img:hover{
-    box-shadow: 5px 5px 10px 0px #666;
+    box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 section li:hover{
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    
 }
 
 /* ---------------------main--------------------- */

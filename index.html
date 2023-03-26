@@ -49,20 +49,21 @@
                     <div class="swiper-slide"><img src="img/banner3.png" alt=""></div>
                     <div class="swiper-slide"><img src="img/banner4.png" alt=""></div>              
                 </div>
-                <div class="swiper-button-next" style="color: #fff;"></div>
-                <div class="swiper-button-prev" style="color: #fff;"></div>
+                <!-- <div class="swiper-button-next" style="color: #fff;"></div> -->
+                <!-- <div class="swiper-button-prev" style="color: #fff;"></div> -->
+                <div class="swiper-pagination"></div>
             </div>
         </div>   
 
 <!------------- clayofstories 長條 ----------------->
 
         <div class="logo-banner">
-            <img class="clay-banner" src="img/cla.png" alt="">
-            <img class="clay-banner" src="img/cla.png" alt="">
-            <img class="clay-banner" src="img/cla.png" alt="">
-            <img class="clay-banner" src="img/cla.png" alt="">
-            <img class="clay-banner" src="img/cla.png" alt="">
-            <img class="clay-banner" src="img/cla.png" alt="">
+            <img src="img/Group 122.png" alt="">
+            <img src="img/Group 122.png" alt="">
+            <img src="img/Group 122.png" alt="">
+            <img src="img/Group 122.png" alt="">
+            <img src="img/Group 122.png" alt="">
+            <img src="img/Group 122.png" alt="">
         </div>
 
 
@@ -78,7 +79,7 @@
         </div>
 <!------------------- img -------------------->
 
-        <img src="img/Group 44.png" alt="">
+        <!-- <img src="img/Group 44.png" alt=""> -->
 
         
 <!------------------- section --------------------->
@@ -156,17 +157,27 @@
     </script>
 
     <!-- Swiper JS -->
-     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-        navigation: {
+          spaceBetween: 20,
+          centeredSlides: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
-        },
+          },
         });
-    </script>
+      </script>
 
 </body>
 </html>
