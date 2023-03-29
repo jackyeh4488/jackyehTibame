@@ -7,24 +7,31 @@
     <title>*:･ﾟ✧ clayofstories ✧･ﾟ: *</title>
     <link rel="icon" href="img/titleicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <script src="https://kit.fontawesome.com/56b7867370.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/56b7867370.js" crossorigin="anonymous"></script> <!-- fontawesome -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet"> <!-- 字形 -->
     <link rel="stylesheet" href="css/style.css"> <!-- 我的css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/> <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- Aos -->
+    <script src="jQuery/jquery-3.6.4.min.js"></script>
+    <script src="jQuery/index.js"></script>
 </head>
 <body>
+    <!-- 側邊選單 -->
+
+    <div class="aside">
+        <ul>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="howtobuy.html">How to buy</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+
 <!------------------- header （不包在裡面）------------------->
     <header>
         <ul class="menu">
             <li>
-                <a href="#"><i class="fa-solid fa-bars"></i>目錄</a>
-                <ol>
-                    <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="product.html">Product</a></li>
-                    <li><a href="howtobuy.html">How to buy</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ol>
+                <a href="#" class="aside-btn"><i class="fa-solid fa-bars"></i>目錄</a>
             </li>
             <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>搜尋</a></li>                
         </ul>
@@ -45,7 +52,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="img/Group 24.png" alt=""></div>
                     <div class="swiper-slide"><img src="img/banner1.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/mycat.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/banner4.png" alt=""></div>
                     <div class="swiper-slide"><img src="img/banner3.png" alt=""></div>
                     <div class="swiper-slide"><img src="img/banner4.png" alt=""></div>              
                 </div>
@@ -124,6 +131,10 @@
             </div>
         </div>
     </div>
+
+    <!-- 回到最上面 -->
+    <a href="#" class="to-top"><i class="fa-solid fa-arrow-up-long"></i></a>
+
 
 <!------------------- footer （不包在裡面）------------------->
     <footer>

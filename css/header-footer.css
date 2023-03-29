@@ -7,7 +7,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 1000;
     width: 100%;
 }
 
@@ -37,33 +37,75 @@ header li{
 
 /* 子選單 */
 
+.aside{
+    position: fixed;
+    top: 70px;
+    
+    height: 100%;
+    width: 400px;
+    background: #F4A7B9;
+    z-index: 100;
+    transform: translateX(-400px);
+    transition: .5s;
+}
+
+.aside ul{
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+.aside a{
+    display: block;
+    line-height: 40px;
+    height: 40px;
+    width: 300px;
+    text-decoration: none;
+    padding: 20px 0 20px 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+    transition: .3s;
+    /* background: #000; */
+    border-bottom: 1px solid #F4A7B9;
+}
+
+.aside a:hover{
+    color: #000;
+    border-bottom: 1px solid #fff;    
+}
+
+.open body{
+    transform: translateX(400px);
+}
+
+.open .aside{
+    transform: translateX(0px);
+}
+/* 
 ol{
     display: none;
     position: absolute;
     top: 70px;
     left: -61px;
-    /* width: 300px; */
-    /* height: 800px; */
     background: #F4A7B9;
-}
+} */
 
-ol>li{
+/* ol>li{
     text-align: center;
     width: 300px;
     border-bottom: #F4A7B9;
-}
+} */
 
-ol>li>a{
+/* ol>li>a{
     border-bottom: 1px solid #F4A7B9;
     transition: .3s;
     padding-top: 10px;
     padding-bottom: 10px;
-    /* background: #000; */
-}
+} */
 
-ol>li>a:hover{
+/* ol>li>a:hover{
     border-bottom: 1px solid #ccc;
-}
+} */
 
 
 /*  */
@@ -170,3 +212,4 @@ footer .info{
     border-bottom: 1px solid #fff;
     padding-bottom: 20px;
 }
+
