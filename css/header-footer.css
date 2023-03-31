@@ -82,6 +82,26 @@ header li{
     transform: translateX(0px);
 }
 
+.open .click-to-hide{
+    transform: translateX(0px);
+}
+
+/* 燈箱效果 */
+.click-to-hide{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #000;
+    opacity: 0.75;
+    z-index: 10;
+    /* transition: .3s; */
+    transform: translateX(-100%);
+}
+
+.stop-scrolling{
+    
+}
+
 /*  */
 
 header i{
@@ -220,4 +240,5 @@ footer .info{
     filter: Alpha(opacity=0);
     transform: translateY(150%);
 }
+
 

@@ -11,13 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet"> <!-- 字形 -->
     <link rel="stylesheet" href="css/style.css"> <!-- 我的css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/> <!-- swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- Aos -->
-    <script src="jQuery/jquery-3.6.4.min.js"></script>
-    <script src="jQuery/index.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- Aos -->   
 </head>
 <body>
-    <!-- 側邊選單 -->
+    <!-- 燈箱效果，配合側邊選單使用 -->
+    <div class="click-to-hide"></div>
 
+    <!-- 側邊選單 -->
     <div class="aside">
         <ul>
             <li><a href="aboutus.html">About Us</a></li>
@@ -26,7 +26,7 @@
             <li><a href="login.html">Login</a></li>
         </ul>
     </div>
-
+    
 <!------------------- header （不包在裡面）------------------->
     <header>
         <ul class="menu">
@@ -133,7 +133,7 @@
     </div>
 
     <!-- 回到最上面 -->
-    <a href="#" class="to-top"><i class="fa-solid fa-arrow-up-long"></i></a>
+    <a href="#" class="to-top hide"><i class="fa-solid fa-arrow-up-long"></i></a>
 
 
 <!------------------- footer （不包在裡面）------------------->
@@ -160,8 +160,13 @@
             <p>Copyright © clayofstories 2023 All Rights Reserved</p>
         </div>
     </footer>
-    
 
+
+    <!-- jQuery在這 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="jQuery/index.js"></script>
+    
+    <!-- Aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

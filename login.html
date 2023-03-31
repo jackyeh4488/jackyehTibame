@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="css/login.css">
     <script src="jQuery/jquery-3.6.4.min.js"></script>
     <script src="jQuery/index.js"></script>
-
 </head>
 <body>
-      <!-- 側邊選單 -->
+    <!-- 燈箱效果，配合側邊選單使用 -->
+    <div class="click-to-hide"></div>
 
+    <!-- 側邊選單 -->
     <div class="aside">
         <ul>
             <li><a href="aboutus.html">About Us</a></li>
@@ -43,37 +44,39 @@
     </header>
 
     <!-- login -->
-
-    <main>
-        <div class="login-pic">
-            <img src="img/loginrabbit.png" alt="">
-        </div>
-
-        <div class="content">
-            <div class="login">
-                <h1>Create your free Account</h1>
-
-                <h2 class="box-title">Full Name</h2>
-                <input type="text" class="input-text" placeholder="Enter your Full Name here">
-
-                <h2 class="box-title">Email</h2>
-                <input type="text" class="input-text" placeholder="Enter your Email here">
-
-                <h2 class="box-title">Password</h2>
-                <input type="text" class="input-text" placeholder="Enter your Password here">
-
-                <input class="input-button" type="button" value="Create Account">
-                <p>Already have a account？</p>
-
-                <a href="" class="login-link">Log in</a>
-                
-                <div class="social-media-link">
-                    <a href="#"><i class="fa-brands fa-google"></i>Sign up with Google</a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i>Sign up with Facebook</a>
+    <div class="wrapper">
+        <main>
+            <div class="login-pic">
+                <img src="img/loginrabbit.png" alt="">
+            </div>
+    
+            <div class="content">
+                <div class="login">
+                    <h1>Create your free Account</h1>
+    
+                    <h2 class="box-title">Full Name</h2>
+                    <input type="text" class="input-text" placeholder="Enter your Full Name here">
+    
+                    <h2 class="box-title">Email</h2>
+                    <input type="text" class="input-text" placeholder="Enter your Email here">
+    
+                    <h2 class="box-title">Password</h2>
+                    <input type="text" class="input-text" placeholder="Enter your Password here">
+    
+                    <input class="input-button" type="button" value="Create Account">
+                    <p>Already have a account？</p>
+    
+                    <a href="" class="login-link">Log in</a>
+                    
+                    <div class="social-media-link">
+                        <a href="#"><i class="fa-brands fa-google"></i>Sign up with Google</a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i>Sign up with Facebook</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
+    
 
 
     <!------------------- footer （不包在裡面）------------------->

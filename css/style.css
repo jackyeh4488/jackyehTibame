@@ -24,7 +24,7 @@ body{
 
 .banner{
     /* width: 100%; */
-    margin-top: 75px;
+    padding-top: 75px;
     display: block;
 }
 
@@ -317,36 +317,5 @@ main{
     color:#E96B92;
 }
 
-.to-top{
-    display: block;
-    position: fixed;
-    bottom: 60px;
-    right: 50px;
-    font-size: 50px;
-    color: #fff;
-    animation: jump 1.5s linear infinite;
-    text-align: center;
-    line-height: 70px;
-    width: 70px;
-    transition: .3s;
-    background: #E96B92;
-    
-    border-radius: 50%;
-}
 
-.to-top:hover{
-    color: #fff;
-    background: #00143e;
-}
 
-@keyframes jump {
-    25% {transform: translateY(10px)}
-    50%, 100% {transform: translate(0)}
-    75% {transform: translateY(-10px)}
-}
-
-.to-top.hide{
-    opacity: 0;
-    filter: Alpha(opacity=0);
-    transform: translateY(150%);
-}

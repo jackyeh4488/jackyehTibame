@@ -11,7 +11,7 @@ body{
 .wrapper{
     width: 1200px;
     margin: 0 auto;
-    margin-top: 180px;
+    padding-top: 180px;
     /* outline: 5px solid green; */
 }
 
