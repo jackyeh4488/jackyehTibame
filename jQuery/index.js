@@ -16,6 +16,7 @@ $(document).ready(function(){
     });
     // 點擊後側邊欄會出現
     $('.aside-btn').click(function(event){
+        event.preventDefault();
         $('body').toggleClass('open');
         // alert("測試測試測試");
         $('.click-to-hide').toggleClass('open')
