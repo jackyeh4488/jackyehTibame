@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/56b7867370.js" crossorigin="anonymous"></script> <!-- fontawesome -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet"> <!-- 字形 -->   
     <link rel="stylesheet" href="css/plate.css"> <!-- 我的css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />  <!-- swiper -->   
 </head>
 <body>
     <!-- 燈箱效果，配合側邊選單使用 -->
@@ -46,18 +47,44 @@
         <h2>Products</h2>
         <!-- main -->
         <div class="main">
-            <div class="pic">
-                <div class="big">
-                    <img src="img/bluecloud.jpg" alt="">
+            <div style="--swiper-navigation-color: #ccc; --swiper-pagination-color: #fff" class="swiper mySwiper2 pic">
+                <div class="swiper-wrapper big">
+                  <div class="swiper-slide">
+                    <img src="img/bluecloud.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/bluecloud2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/bluecloudtest.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/bluecloudtest1.png" />
+                  </div>
                 </div>
-                <div class="small">
-                    <img src="img/bluecloud2.jpg" alt="" width="60px">
-                    <img src="img/bluecloud3.jpg" alt="" width="60px">
-                    <img src="img/bluecloud4.jpg" alt="" width="60px">                    
-                    <img src="img/bluecloud.png" alt="" width="60px">                    
-                    <img src="../img/cloud-plate.png" alt="" width="60px">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div thumbsSlider="" class="swiper mySwiper">
+                    <div class="swiper-wrapper small">
+                      <div class="swiper-slide">
+                        <img src="img/bluecloud.jpg" width="100px"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/bluecloud2.jpg" width="100px" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/bluecloudtest.png" width="100px" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/bluecloudtest1.png" width="100px" />
+                      </div>
+                    </div>
                 </div>
+    
             </div>
+            
+
+
             <div class="content">
                 <h1>Dance with the clouds jewelry tray</h1>
                 <h2>NT$ 790</h2>
@@ -164,5 +191,30 @@
     <!-- jQuery在這 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="jQuery/index.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
+        });
+    </script>
 </body>
 </html>

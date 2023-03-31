@@ -58,20 +58,21 @@ body{
 /* 照片在這 */
 .pic{
     width: 560px;
-    /* outline: 1px solid red; */
-    /* margin-right: 0px; */
+    /* outline: 4px solid blue; */
+    /* margin-right: 20px; */
 }
 
 .big{
     width: 560px;
+    margin-bottom: 20px;
 }
 
 .big img{
     width: 100%;
 }
 
-/* content */
 
+/* content */
 .content{
     /* outline: 1px solid royalblue; */
     width: 560px;
@@ -89,13 +90,13 @@ body{
     font-size: 26px;
     border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     /* font-weight: bold; */
 }
 
 .content p{
     width: 458px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     line-height: 2.4;
     letter-spacing: 3px;
 }
@@ -120,7 +121,7 @@ select{
     box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.25);
     font-size: 20px;
     margin-bottom: 15px;
-    margin-top: 10px;
+    margin-top: 80px;
     transition: .3s;
     border-radius: 5px;
 }
@@ -258,3 +259,70 @@ article h2{
 .similar-product img{
     display: block;
 }
+
+/* swiper */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mySwiper2 {
+    height: 80%;
+    width: 100%;
+  }
+
+  .mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .small{
+    /* background: #000; */
+    /* border: 6px solid green; */
+  }
