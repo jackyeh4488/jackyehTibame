@@ -1,0 +1,84 @@
+@media screen and (max-width: 414px){
+   
+    /* header{
+        
+    }
+
+    .menu{
+        margin-left: 15px;
+        margin-right: 70px;
+    }
+
+    header>a{
+        margin-right: 30px;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .login{
+        display: none;
+    }
+
+    .aside{
+        width: 330px;
+    }
+
+    .aside a{
+        width: auto;
+    } */
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        padding-top: 130px;
+    }
+
+    main{
+        width: auto;
+        align-items: center;
+        border-radius: 30px;
+    }
+
+    .login-pic{
+        display: none;
+    }
+
+    .content{
+        width: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .login{
+        display: block;        
+    }
+
+    .login h1{
+        margin-bottom: 35px;
+        font-size: 22px;
+    }
+
+    .input-text{
+        width: 350px;
+        font-size: 18px;
+        padding-left: 26px;
+    }
+
+    .input-button{
+        margin-top: 20px;
+    }
+
+    .social-media-link{
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    .social-media-link>a{
+        margin-bottom: 30px;
+        width: 288px;
+    }
+}
