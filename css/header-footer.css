@@ -219,8 +219,7 @@ footer .info{
     line-height: 70px;
     width: 70px;
     transition: .3s;
-    background: #E96B92;
-    
+    background: #E96B92;    
     border-radius: 50%;
 }
 
@@ -317,5 +316,9 @@ footer .info{
         line-height: 50px;
         bottom: 40px;
         right: 20px;
+    }
+
+    .to-top:hover{
+        background: #E96B92;
     }
 }
