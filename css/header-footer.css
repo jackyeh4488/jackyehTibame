@@ -26,6 +26,11 @@ header li{
     /* 這邊等等可能會出錯 */
 }
 
+header>a>img{
+    width: 205px;
+    height: 70px;
+}
+
 .menu>li{
     position: relative;
     transition: 1s;
