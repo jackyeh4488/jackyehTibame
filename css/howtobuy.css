@@ -47,7 +47,13 @@ h1::after{
     height: 1px;
 }
 
-.wrapper>img{
+/* .wrapper>img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 200px;
+} */
+
+picture>img{
     display: block;
     margin: 0 auto;
     margin-bottom: 200px;
