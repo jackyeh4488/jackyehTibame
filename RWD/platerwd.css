@@ -1,0 +1,116 @@
+@media screen and (max-width: 414px) {
+
+    .wrapper{
+        width: auto;
+        padding-top: 130px;
+    }
+
+    .wrapper>h2{
+        font-size: 22px;
+        width: auto;
+        margin-bottom: 60px;
+    }
+
+    .wrapper>h2::before, .wrapper>h2::after{
+        width: 100px;
+    }
+
+    .wrapper>h2::before{
+        left: 12%;
+    }
+
+    .wrapper>h2::after{
+        right: 12%;
+    }
+
+    .main{
+        /* display: none; */
+        width: auto;
+        flex-direction: column;
+        padding-bottom: 40px;
+        margin-bottom: 60px;
+    }
+
+    .content{
+        /* display: none; */
+        box-sizing: border-box;
+        padding: 10px;
+        width: auto;
+    }
+
+    .content h1{
+        font-size: 22px;
+        width: auto;
+        margin-top: 40px;
+    }
+
+    .content h2{
+        width: 400px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .content p{
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .shop{
+        margin-top: 40px;
+    }
+
+    .shop, .keep{
+        width: auto;
+    }
+
+    section{
+        /* display: none; */
+        flex-direction: column;
+    }
+
+    .product-info{
+        width: auto;
+        margin-bottom: 50px;
+    }
+
+    .product-info h2{
+        top: -50px;
+        left: 20px;
+    }
+
+    .pay{
+        width: auto;
+    }
+
+    .pay h2{
+        top: -50px;
+    }
+
+    article{
+        display: none;
+        width: auto;
+    }
+
+    .mustknow p{
+        width: auto;
+    }
+
+    .similar-product{
+        /* display: none; */
+        flex-wrap: wrap;
+    }
+
+    .similar-product h2{
+        left: 20px;
+    }
+
+    .similar-product a{
+        flex-grow: 1;
+        margin-bottom: 40px;
+    }
+
+    .similar-product img{
+        width: 150px;
+        margin: 0 auto;
+    }
+}
