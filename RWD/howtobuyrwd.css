@@ -35,6 +35,7 @@
         width: 300px;
     }
 
-    .content{}
-    
+    picture>img{
+        width: 350px;
+    }
 }
