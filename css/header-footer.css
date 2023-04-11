@@ -316,6 +316,7 @@ footer .info{
     }
 
     .to-top{
+        animation: none;
         font-size: 30px;
         width: 50px;
         line-height: 50px;
